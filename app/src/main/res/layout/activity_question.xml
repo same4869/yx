@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:yx="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/comm_linear_bg">
+
+    <RelativeLayout
+        android:id="@+id/base_head_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/base_back"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp48"
+            android:paddingBottom="@dimen/dp6"
+            android:paddingLeft="@dimen/dp15"
+            android:paddingRight="@dimen/dp15"
+            android:paddingTop="@dimen/dp6"
+            android:src="@mipmap/back" />
+
+        <com.ml.yx.views.RoundAngleImageView
+            android:id="@+id/base_head_img"
+            android:layout_width="@dimen/dp48"
+            android:layout_height="@dimen/dp48"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/dp20"
+            android:layout_marginTop="@dimen/dp10"
+            android:src="@mipmap/default_head_avatar"
+            yx:backgroudDrawable="@mipmap/yellow_blank"
+            yx:spaceSize="@dimen/dp1" />
+
+        <TextView
+            android:id="@+id/base_head_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/base_head_img"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp15"
+            android:background="@drawable/chat"
+            android:gravity="center"
+            android:maxWidth="@dimen/dp260"
+            android:paddingBottom="@dimen/dp5"
+            android:paddingLeft="@dimen/dp20"
+            android:paddingRight="@dimen/dp20"
+            android:paddingTop="@dimen/dp13"
+            android:text="你好好好哦哦哦哦哦"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/sp14" />
+
+
+    </RelativeLayout>
+
+
+    <EditText
+        android:id="@+id/edt_content"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp160"
+        android:layout_marginLeft="@dimen/dp15"
+        android:layout_marginRight="@dimen/dp15"
+        android:layout_marginTop="@dimen/dp10"
+        android:background="@drawable/comm_square_bg"
+        android:gravity="start"
+        android:hint="@string/question_hint1"
+        android:padding="@dimen/dp10"
+        android:maxLength="300"
+        android:textColor="@color/white"
+        android:textColorHint="@color/edit_bg"
+        android:textSize="@dimen/sp14" />
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp48"
+        android:layout_marginLeft="@dimen/dp15"
+        android:layout_marginRight="@dimen/dp15"
+        android:background="@drawable/button_bg_selector"
+        android:text="@string/question_text_submit"
+        android:layout_marginTop="@dimen/dp15"
+        android:enabled="false"/>
+
+
+</LinearLayout>

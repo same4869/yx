@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.ml.yx.views.YouXinTitleBar
+        android:id="@+id/youxin_titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </com.ml.yx.views.YouXinTitleBar>
+
+
+    <RelativeLayout
+        android:id="@+id/look_side_normal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp120"
+        android:layout_below="@+id/youxin_titlebar"
+        android:layout_marginLeft="@dimen/dp15"
+        android:layout_marginRight="@dimen/dp15"
+        android:layout_marginTop="@dimen/dp15v"
+        android:background="@drawable/pre_level_select_shape">
+
+        <ImageView
+            android:id="@+id/look_side_normal_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/dp2"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/lookside_holder" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/look_side_heart"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp120"
+        android:layout_below="@+id/look_side_normal"
+        android:layout_marginLeft="@dimen/dp15"
+        android:layout_marginRight="@dimen/dp15"
+        android:layout_marginTop="@dimen/dp10v"
+        android:background="@drawable/pre_level_select_shape">
+
+        <ImageView
+            android:id="@+id/look_side_heart_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/dp2"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/lookside_holder" />
+
+        <LinearLayout
+            android:id="@+id/heart_tip_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:layout_margin="@dimen/dp2"
+            android:background="#88000000"
+            android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/heart_tips1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="近景视角"
+            android:textColor="#FFEC1A"
+            android:textSize="@dimen/sp17" />
+
+        <TextView
+            android:id="@+id/heart_tips2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/heart_tips1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp5v"
+            android:text="完成15天的锻炼后解锁"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/sp14" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/unlock_tip_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="完成第n天训练后解锁"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/look_side_start_btn"
+        android:textColor="#777777"
+        android:layout_marginBottom="@dimen/dp10v"
+        android:textSize="@dimen/sp14"/>
+
+    <RelativeLayout
+        android:id="@+id/look_side_start_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dp30v"
+        android:background="@drawable/level_btn_bg">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_centerInParent="true">
+
+        <ImageView
+            android:id="@+id/look_side_start_tips1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/play" />
+
+        <TextView
+            android:id="@+id/look_side_start_tips2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开始"
+            android:textColor="#FFEC1A"
+            android:textSize="@dimen/sp12" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

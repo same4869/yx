@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:yx="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/comm_linear_bg">
+
+    <ImageView
+        android:id="@+id/callback_back"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp48"
+        android:paddingBottom="@dimen/dp6"
+        android:paddingLeft="@dimen/dp15"
+        android:paddingRight="@dimen/dp15"
+        android:paddingTop="@dimen/dp6"
+        android:src="@mipmap/back" />
+
+    <RelativeLayout
+        android:id="@+id/callback_head_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.ml.yx.views.RoundAngleImageView
+            android:id="@+id/callback_head_img"
+            android:layout_width="@dimen/dp48"
+            android:layout_height="@dimen/dp48"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/dp20"
+            android:layout_marginTop="@dimen/dp10"
+            android:src="@mipmap/ic_launcher"
+            yx:backgroudDrawable="@mipmap/yellow_blank"
+            yx:spaceSize="@dimen/dp1" />
+
+        <TextView
+            android:id="@+id/callback_head_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/callback_head_img"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp10"
+            android:background="@drawable/chat"
+            android:gravity="center"
+            android:maxWidth="@dimen/dp260"
+            android:paddingBottom="@dimen/dp5"
+            android:paddingLeft="@dimen/dp20"
+            android:paddingRight="@dimen/dp20"
+            android:paddingTop="@dimen/dp13"
+            android:text="优形CEO会细读每一条反馈"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/sp14" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/callback_head_layout"
+        android:paddingBottom="@dimen/dp15"
+        android:paddingLeft="@dimen/dp15"
+        android:paddingRight="@dimen/dp15">
+
+        <EditText
+            android:id="@+id/callback_content"
+            style="@style/inputBg"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp210"
+            android:layout_marginTop="@dimen/dp15"
+            android:gravity="top"
+            android:hint="您的意见"
+            android:padding="@dimen/dp10" />
+
+        <EditText
+            android:id="@+id/callback_wxnum"
+            style="@style/inputBg"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp48"
+            android:layout_below="@+id/callback_content"
+            android:layout_marginTop="@dimen/dp15"
+            android:hint="交个朋友吧，留一下微信"
+            android:padding="@dimen/dp10" />
+
+        <Button
+            android:id="@+id/callback_submit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp48"
+            android:layout_marginTop="@dimen/dp15"
+            android:layout_below="@+id/callback_wxnum"
+            android:background="@drawable/button_bg_selector"
+            android:text="怒骂CEO" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:yx="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/comm_linear_bg">
+
+    <ImageView
+        android:id="@+id/base_back"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp48"
+        android:paddingBottom="@dimen/dp6"
+        android:paddingLeft="@dimen/dp15"
+        android:paddingRight="@dimen/dp15"
+        android:paddingTop="@dimen/dp6"
+        android:src="@mipmap/back" />
+
+    <RelativeLayout
+        android:id="@+id/base_head_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.ml.yx.views.RoundAngleImageView
+            android:id="@+id/base_head_img"
+            android:layout_width="@dimen/dp48"
+            android:layout_height="@dimen/dp48"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/dp20"
+            android:layout_marginTop="@dimen/dp10"
+            android:src="@mipmap/default_head_avatar"
+            yx:backgroudDrawable="@mipmap/yellow_blank"
+            yx:spaceSize="@dimen/dp1"/>
+
+        <TextView
+            android:id="@+id/base_head_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/base_head_img"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp10"
+            android:background="@drawable/chat"
+            android:gravity="center"
+            android:maxWidth="@dimen/dp260"
+            android:paddingBottom="@dimen/dp5"
+            android:paddingLeft="@dimen/dp20"
+            android:paddingRight="@dimen/dp20"
+            android:paddingTop="@dimen/dp13"
+            android:text="你好好好哦哦哦哦哦"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/sp14" />
+
+
+    </RelativeLayout>
+
+
+    <FrameLayout
+        android:id="@+id/fragment_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/base_head_layout"
+        android:layout_marginTop="@dimen/dp20"
+        android:paddingLeft="@dimen/dp15"
+        android:paddingRight="@dimen/dp15">
+
+    </FrameLayout>
+
+
+</RelativeLayout>

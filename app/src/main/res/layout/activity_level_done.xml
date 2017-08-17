@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1f1e1c">
+
+    <com.ml.yx.views.YouXinTitleBar
+        android:id="@+id/youxin_titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></com.ml.yx.views.YouXinTitleBar>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/level_done_tv_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/youxin_titlebar"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp15v"
+            android:text="恭喜！你离目标又近了一步"
+            android:textColor="#FFEC1A"
+            android:textSize="@dimen/sp24" />
+
+        <RelativeLayout
+            android:layout_width="@dimen/dp240"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp15v">
+
+            <FrameLayout
+                android:id="@+id/water_origin_layout"
+                android:layout_width="@dimen/dp100"
+                android:layout_height="@dimen/dp160"
+                android:layout_alignParentLeft="true">
+
+                <com.ml.yx.views.WaterWaveView
+                    android:id="@+id/water_origin"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"></com.ml.yx.views.WaterWaveView>
+
+                <ImageView
+                    android:id="@+id/water_origin_iv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="center"
+                    android:src="@mipmap/level_done_male_origin" />
+
+            </FrameLayout>
+
+            <ImageView
+                android:id="@+id/level_done_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/level_done_arrow" />
+
+            <TextView
+                android:id="@+id/level_done_arrow_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/level_done_arrow"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dp90"
+                android:text="60%"
+                android:textColor="#FFEC1A"
+                android:textSize="@dimen/sp18" />
+
+            <FrameLayout
+                android:id="@+id/water_target_layout"
+                android:layout_width="@dimen/dp100"
+                android:layout_height="@dimen/dp160"
+                android:layout_alignParentRight="true">
+
+                <com.ml.yx.views.WaterWaveView
+                    android:id="@+id/water_target"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"></com.ml.yx.views.WaterWaveView>
+
+                <ImageView
+                    android:id="@+id/water_target_iv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="center"
+                    android:src="@mipmap/level_done_male_target" />
+
+            </FrameLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp15"
+            android:layout_gravity="center_horizontal">
+
+            <RelativeLayout
+                android:id="@+id/time_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/time_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/level_done_time_icon" />
+
+                <TextView
+                    android:id="@+id/time_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/time_icon"
+                    android:text="时长"
+                    android:textColor="#5C5B54"
+                    android:textSize="@dimen/sp12" />
+
+                <TextView
+                    android:id="@+id/time_title_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/time_title"
+                    android:layout_below="@+id/time_title"
+                    android:text="32分20秒"
+                    android:textColor="#999891"
+                    android:textSize="@dimen/dp14" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/time_kcal_line"
+                android:layout_width="1px"
+                android:layout_height="@dimen/dp32"
+                android:layout_marginLeft="@dimen/dp15"
+                android:layout_toRightOf="@+id/time_layout"
+                android:background="#403F39" />
+
+            <RelativeLayout
+                android:id="@+id/kcal_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp15"
+                android:layout_toRightOf="@+id/time_kcal_line">
+
+                <ImageView
+                    android:id="@+id/kcal_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/level_done_kcal_icon" />
+
+                <TextView
+                    android:id="@+id/kcal_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/kcal_icon"
+                    android:text="消耗"
+                    android:textColor="#5C5B54"
+                    android:textSize="@dimen/sp12" />
+
+                <TextView
+                    android:id="@+id/kcal_title_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/kcal_title"
+                    android:layout_below="@+id/kcal_title"
+                    android:text="123KCal"
+                    android:textColor="#999891"
+                    android:textSize="@dimen/dp14" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/level_done_btn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp48"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dp15"
+        android:layout_marginLeft="@dimen/dp15"
+        android:layout_marginRight="@dimen/dp15"
+        android:background="@drawable/button_bg_selector"
+        android:text="明天见" />
+
+</RelativeLayout>

@@ -1,0 +1,7 @@
+渠道包脚本使用说明
+1.首先使用AS的Generate signed APK功能正常打一个签名混淆apk包
+2.把这个apk的名字改为ml_yx开头，加上版本号，加上环境，加上时间（例如：ml_yx_v1.0.0_product_160601.apk）
+3.把这个包放在build_channel下，在这个文件夹下有个channel.txt的文件，所有渠道逗号分开，无回车
+4.执行build_channel.py脚本，成功后生成channel_output目录，渠道包都在里面
+
+注：第一步生成的APK是没有渠道的

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/edt_content"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp210"
+        android:layout_below="@+id/base_head_layout"
+        android:layout_marginTop="@dimen/dp10"
+        android:background="@drawable/comm_square_bg"
+        android:gravity="start"
+        android:hint="@string/question_hint1"
+        android:padding="@dimen/dp10"
+        android:textColor="@color/white"
+        android:textColorHint="@color/edit_bg"
+        android:textSize="@dimen/sp14" />
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp48"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dp15"
+        android:background="@drawable/button_bg_selector"
+        android:text="@string/question_text_submit" />
+
+
+</RelativeLayout>
+

@@ -1,0 +1,53 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ml.yx.activity.base.SelectSexFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp120"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:id="@+id/male_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/comm_square_selector">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawablePadding="@dimen/dp10"
+                android:drawableTop="@mipmap/icon_male"
+                android:gravity="center"
+                android:text="@string/sex_text_male"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp17" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/female_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_weight="1"
+            android:background="@drawable/comm_square_selector">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawablePadding="@dimen/dp10"
+                android:drawableTop="@mipmap/icon_female"
+                android:gravity="center"
+                android:text="@string/sex_text_female"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp17" />
+        </FrameLayout>
+    </LinearLayout>
+
+
+</FrameLayout>

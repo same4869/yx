@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer-array name="body_part_code">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </integer-array>
+    <string-array name="body_part_name">
+        <item>"胸"</item>
+        <item>"背"</item>
+        <item>"腹"</item>
+        <item>"臂"</item>
+        <item>"腿"</item>
+        <item>"臀"</item>
+    </string-array>
+    <array name="body_part_image">
+        <item>@mipmap/body_part_male_xiong</item>
+        <item>@mipmap/body_part_male_bei</item>
+        <item>@mipmap/body_part_male_fu</item>
+        <item>@mipmap/body_part_male_bi</item>
+        <item>@mipmap/body_part_male_tui</item>
+        <item>@mipmap/body_part_male_tun</item>
+        <item>@mipmap/body_part_female_xiong</item>
+        <item>@mipmap/body_part_female_bei</item>
+        <item>@mipmap/body_part_female_fu</item>
+        <item>@mipmap/body_part_female_bi</item>
+        <item>@mipmap/body_part_female_tui</item>
+        <item>@mipmap/body_part_female_tun</item>
+    </array>
+
+    <string-array name="weight_name">
+        <item>1-2斤</item>
+        <item>2-4斤</item>
+        <item>4-6斤</item>
+        <item>6-8斤</item>
+        <item>10+斤</item>
+    </string-array>
+    <integer-array name="weight_code">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </integer-array>
+    <string-array name="getPic">
+        <item>@string/fromCamera</item>
+        <item>@string/fromLib</item>
+    </string-array>
+</resources>

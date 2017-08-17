@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:yx="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.ml.yx.views.YouXinTitleBar
+        android:id="@+id/youxin_titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </com.ml.yx.views.YouXinTitleBar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                style="@style/user_block"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="@dimen/dp10">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <com.ml.yx.views.RoundAngleImageView
+                        android:id="@+id/user_head_img"
+                        android:layout_width="@dimen/dp48"
+                        android:layout_height="@dimen/dp48"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginRight="@dimen/dp10"
+                        android:visibility="gone"
+                        yx:backgroudDrawable="@mipmap/yellow_blank"
+                        yx:spaceSize="@dimen/dp1" />
+
+                    <EditText
+                        android:id="@+id/user_nickname_edt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@color/transparent"
+                        android:singleLine="true"
+                        android:focusable="false"
+                        android:hint="点击输入昵称"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/sp14" />
+                </LinearLayout>
+
+                <View
+                    style="@style/line"
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="@dimen/dp10"
+                    android:layout_marginTop="@dimen/dp10" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.ml.yx.views.ChartViews
+                        android:id="@+id/user_chart"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp200"
+                        android:visibility="invisible"/>
+
+                    <TextView
+                        android:id="@+id/user_no_chart"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:visibility="gone"
+                        android:text="你还没有开始锻炼哦"
+                        android:textColor="@color/edit_bg"
+                        android:textSize="@dimen/sp14" />
+                </FrameLayout>
+
+                <View
+                    style="@style/line"
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="@dimen/dp10"
+                    android:layout_marginTop="@dimen/dp10" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/user_trainning_time_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/user_item_key"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="训练总时长" />
+
+                        <TextView
+                            android:id="@+id/user_trainning_time"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp10"
+                            android:textColor="@color/yellow"
+                            android:textSize="@dimen/sp14" />
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/user_line"
+                        android:layout_width="1px"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/dp10"
+                        android:layout_marginRight="@dimen/dp10"
+                        android:background="@color/text_color_gray" />
+
+                    <LinearLayout
+                        android:id="@+id/user_target_mass_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/user_item_key"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="目标体重" />
+
+                        <TextView
+                            android:id="@+id/user_target_mass"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp10"
+                            android:textColor="@color/yellow"
+                            android:textSize="@dimen/sp14" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/user_block"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/user_target_item"
+                    style="@style/user_item"
+                    android:layout_width="match_parent">
+
+                    <TextView
+                        style="@style/user_item_key"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="目标" />
+
+                    <TextView
+                        android:id="@+id/user_target"
+                        style="@style/user_item_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <View
+                        style="@style/line"
+                        android:layout_width="match_parent"
+                        android:layout_alignParentBottom="true" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/user_sex_item"
+                    style="@style/user_item"
+                    android:layout_width="match_parent">
+
+                    <TextView
+                        style="@style/user_item_key"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="性别" />
+
+                    <TextView
+                        android:id="@+id/user_sex"
+                        style="@style/user_item_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <View
+                        style="@style/line"
+                        android:layout_width="match_parent"
+                        android:layout_alignParentBottom="true" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/user_brithday_item"
+                    style="@style/user_item"
+                    android:layout_width="match_parent">
+
+                    <TextView
+                        style="@style/user_item_key"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="生日" />
+
+                    <TextView
+                        android:id="@+id/user_brithday"
+                        style="@style/user_item_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <View
+                        style="@style/line"
+                        android:layout_width="match_parent"
+                        android:layout_alignParentBottom="true" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/user_stature_item"
+                    style="@style/user_item"
+                    android:layout_width="match_parent">
+
+                    <TextView
+                        style="@style/user_item_key"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="身高" />
+
+                    <TextView
+                        android:id="@+id/user_stature"
+                        style="@style/user_item_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <View
+                        style="@style/line"
+                        android:layout_width="match_parent"
+                        android:layout_alignParentBottom="true" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/user_mass_item"
+                    style="@style/user_item"
+                    android:layout_width="match_parent">
+
+                    <TextView
+                        style="@style/user_item_key"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="体重" />
+
+                    <TextView
+                        android:id="@+id/user_mass"
+                        style="@style/user_item_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <View
+                        style="@style/line"
+                        android:layout_width="match_parent"
+                        android:layout_alignParentBottom="true" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/user_period_item"
+                    style="@style/user_item"
+                    android:layout_width="match_parent">
+
+                    <TextView
+                        style="@style/user_item_key"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="周期" />
+
+                    <TextView
+                        android:id="@+id/user_period"
+                        style="@style/user_item_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <View
+                        style="@style/line"
+                        android:layout_width="match_parent"
+                        android:layout_alignParentBottom="true" />
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/user_block"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/user_instructor_item"
+                    style="@style/user_item"
+                    android:layout_width="match_parent">
+
+                    <TextView
+                        style="@style/user_item_key"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="当前教练" />
+
+                    <TextView
+                        android:id="@+id/user_instructor_name"
+                        style="@style/user_item_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <View
+                        style="@style/line"
+                        android:layout_width="match_parent"
+                        android:layout_alignParentBottom="true" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/user_block"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp50"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/user_callback_item"
+                    style="@style/user_item"
+                    android:layout_width="match_parent">
+
+                    <TextView
+                        style="@style/user_item_key"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="用户反馈" />
+
+                    <View
+                        style="@style/line"
+                        android:layout_width="match_parent"
+                        android:layout_alignParentBottom="true" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/user_appraise_item"
+                    style="@style/user_item"
+                    android:layout_width="match_parent">
+
+                    <TextView
+                        style="@style/user_item_key"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="评价优形" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

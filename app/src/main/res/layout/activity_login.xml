@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.ml.yx.views.YouXinTitleBar
+        android:id="@+id/youxin_titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </com.ml.yx.views.YouXinTitleBar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/dp15"
+        android:layout_below="@+id/youxin_titlebar">
+
+        <EditText
+            android:id="@+id/login_phone"
+            style="@style/inputBg"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp48"
+            android:layout_marginTop="@dimen/dp15"
+            android:hint="手机号"
+            android:padding="@dimen/dp15"
+            android:inputType="phone"
+            android:maxLength="11" />
+
+        <LinearLayout
+            android:id="@+id/login_body"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp48"
+            android:layout_below="@+id/login_phone"
+            android:layout_marginTop="@dimen/dp10"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/login_verfify"
+                style="@style/inputBg"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/dp10"
+                android:layout_weight="1"
+                android:hint="验证码"
+                android:padding="@dimen/dp15"
+                android:inputType="number"
+                android:maxLength="4" />
+
+            <Button
+                android:id="@+id/send_verfify_btn"
+                android:layout_width="@dimen/dp120"
+                android:layout_height="match_parent"
+                android:background="@drawable/button_bg_selector"
+                android:text="发送验证码" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/login_submit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp48"
+            android:layout_below="@id/login_body"
+            android:layout_marginTop="@dimen/dp30"
+            android:background="@drawable/button_bg_selector"
+            android:text="登录" />
+
+        <LinearLayout
+            android:id="@+id/wechat_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/wechat_bg"
+                android:padding="@dimen/dp10"
+                android:src="@mipmap/wechat" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10"
+                android:text="微信登录"
+                android:textColor="@color/yellow"
+                android:textSize="@dimen/sp14" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

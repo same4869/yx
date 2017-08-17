@@ -1,0 +1,151 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/birth_weight_text_birth"
+                android:textColor="@color/white_60"
+                android:textSize="@dimen/sp14" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_year"
+                    android:layout_width="@dimen/dp48"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/comm_input_line_bg"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp17" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:text="@string/birth_weight_text_year"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp17" />
+
+                <TextView
+                    android:id="@+id/tv_month"
+                    android:layout_width="@dimen/dp48"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:background="@drawable/comm_input_line_bg"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp17" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:text="@string/birth_weight_text_month"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp17" />
+
+                <TextView
+                    android:id="@+id/tv_day"
+                    android:layout_width="@dimen/dp48"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:background="@drawable/comm_input_line_bg"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp17" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:text="@string/birth_weight_text_day"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp17" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp30"
+                android:text="@string/birth_weight_text_weight"
+                android:textColor="@color/white_60"
+                android:textSize="@dimen/sp14" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/edt_height"
+                    android:layout_width="@dimen/dp48"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/comm_input_line_bg"
+                    android:gravity="center_horizontal"
+                    android:inputType="number"
+                    android:maxLength="3"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp17" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:text="@string/birth_weight_text_cm"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp17" />
+
+                <EditText
+                    android:id="@+id/edt_weight"
+                    android:layout_width="@dimen/dp48"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp30"
+                    android:background="@drawable/comm_input_line_bg"
+                    android:gravity="center_horizontal"
+                    android:inputType="number"
+                    android:maxLength="3"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp17" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:text="@string/birth_weight_text_kg"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp17" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp48"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dp15"
+        android:enabled="false"
+        android:background="@drawable/button_bg_selector"
+        android:text="@string/birth_weight_text_next" />
+
+</RelativeLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="总消耗热量"
+        android:textSize="@dimen/sp14"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/user_total_calorie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0Kcal"
+        android:textSize="@dimen/sp14"
+        android:textColor="@color/yellow"/>
+
+
+    <lecho.lib.hellocharts.view.LineChartView
+        android:id="@+id/user_line_chart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
+
+</LinearLayout>

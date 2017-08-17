@@ -1,0 +1,237 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:yx="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ml.yx.activity.base.SelectBodyPartFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp15"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/body_part1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/comm_border_selector"
+                    android:padding="@dimen/dp2">
+
+                    <com.ml.yx.views.RoundAngleImageView
+                        android:id="@+id/iv_image1"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp80"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/ic_launcher"
+                        yx:xRadius="@dimen/dp2"
+                        yx:yRadius="@dimen/dp2" />
+
+                    <TextView
+                        android:id="@+id/tv_name1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:shadowColor="@color/black"
+                        android:shadowDy="1"
+                        android:shadowRadius="4"
+                        android:text="@string/body_part_part_1"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/sp17" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/body_part2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:layout_weight="1"
+                    android:background="@drawable/comm_border_selector"
+                    android:padding="@dimen/dp2">
+
+                    <com.ml.yx.views.RoundAngleImageView
+                        android:id="@+id/iv_image2"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp80"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/ic_launcher"
+                        yx:xRadius="@dimen/dp2"
+                        yx:yRadius="@dimen/dp2" />
+
+                    <TextView
+                        android:id="@+id/tv_name2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:shadowColor="@color/black"
+                        android:shadowDy="1"
+                        android:shadowRadius="4"
+                        android:text="@string/body_part_part_2"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/sp17" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/body_part3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/comm_border_selector"
+                    android:padding="@dimen/dp2">
+
+                    <com.ml.yx.views.RoundAngleImageView
+                        android:id="@+id/iv_image3"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp80"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/ic_launcher"
+                        yx:xRadius="@dimen/dp2"
+                        yx:yRadius="@dimen/dp2" />
+
+                    <TextView
+                        android:id="@+id/tv_name3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:shadowColor="@color/black"
+                        android:shadowDy="1"
+                        android:shadowRadius="4"
+                        android:text="@string/body_part_part_3"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/sp17" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/body_part4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:layout_weight="1"
+                    android:background="@drawable/comm_border_selector"
+                    android:padding="@dimen/dp2">
+
+                    <com.ml.yx.views.RoundAngleImageView
+                        android:id="@+id/iv_image4"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp80"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/ic_launcher"
+                        yx:xRadius="@dimen/dp2"
+                        yx:yRadius="@dimen/dp2" />
+
+                    <TextView
+                        android:id="@+id/tv_name4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:shadowColor="@color/black"
+                        android:shadowDy="1"
+                        android:shadowRadius="4"
+                        android:text="@string/body_part_part_4"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/sp17" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/body_part5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/comm_border_selector"
+                    android:padding="@dimen/dp2">
+
+                    <com.ml.yx.views.RoundAngleImageView
+                        android:id="@+id/iv_image5"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp80"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/ic_launcher"
+                        yx:xRadius="@dimen/dp2"
+                        yx:yRadius="@dimen/dp2" />
+
+                    <TextView
+                        android:id="@+id/tv_name5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:shadowColor="@color/black"
+                        android:shadowDy="1"
+                        android:shadowRadius="4"
+                        android:text="@string/body_part_part_5"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/sp17" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/body_part6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:layout_weight="1"
+                    android:background="@drawable/comm_border_selector"
+                    android:padding="@dimen/dp2">
+
+                    <com.ml.yx.views.RoundAngleImageView
+                        android:id="@+id/iv_image6"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp80"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/ic_launcher"
+                        yx:xRadius="@dimen/dp2"
+                        yx:yRadius="@dimen/dp2" />
+
+                    <TextView
+                        android:id="@+id/tv_name6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:shadowColor="@color/black"
+                        android:shadowDy="1"
+                        android:shadowRadius="4"
+                        android:text="@string/body_part_part_6"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/sp17" />
+
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp48"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dp15"
+        android:background="@drawable/button_bg_selector"
+        android:enabled="false"
+        android:text="@string/body_part_text_next" />
+
+</RelativeLayout>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">优形</string>
+
+    <!-- listview中的提示 -->
+    <string name="pull_to_refresh_from_bottom_pull_label">上拉加载</string>
+    <string name="pull_to_refresh_from_bottom_refreshing_label">正在加载</string>
+    <string name="pull_to_refresh_from_bottom_release_label">松开加载</string>
+    <string name="pull_to_refresh_tap_label">点击刷新</string>
+    <string name="pull_to_refresh_pull_label">下拉刷新</string>
+    <string name="pull_to_refresh_release_label">松开刷新</string>
+    <string name="pull_to_refresh_refreshing_label">正在刷新</string>
+
+    <!-- 网络提醒 -->
+    <string name="error_network">你网络太差，教练一脸懵B</string>
+    <string name="error_wenba">你网络太差，教练一脸懵B</string>
+    <string name="error_request_params">参数传输错误</string>
+    <string name="error_response_data">你网络太差，教练一脸懵B</string>
+    <string name="error_feed_upload">图片上传失败啦，再试一次呗~</string>
+    <string name="error_network_reload">网络好像不太好呀，点我刷新</string>
+
+    <string name="today">今天</string>
+    <string name="before_yesterday">前天</string>
+    <string name="yesterday">昨天</string>
+
+    <string name="error_invalid_phone">你确定这是你的手机号么?</string>
+    <string name="error_invalid_verfify">验证码错了</string>
+
+    <!-- 引导页 -->
+    <string name="guide_text_start">开始优形</string>
+    <string name="guide_text_login"><u>已有账号</u></string>
+    <!-- 选择教练页 -->
+    <string name="select_coach_title">选个你喜欢的教练</string>
+    <string name="select_coach_locked_error">我在下一版等你</string>
+    <!-- 选择目标页 -->
+    <string name="target_tip">Hi,我能帮到你什么?</string>
+    <string name="target_text_jianzhi">减脂</string>
+    <string name="target_text_suxing">塑形</string>
+    <string name="target_text_zengji">增肌</string>
+    <!-- 选择性别页 -->
+    <string name="sex_tip">你的性别是？</string>
+    <string name="sex_text_male">男</string>
+    <string name="sex_text_female">女</string>
+    <!-- 身高体重页 -->
+    <string name="birth_tip">接下来告诉我你的基本情况</string>
+    <string name="birth_tip2">体重有什么变化么?</string>
+    <string name="birth_weight_text_birth">出生年月</string>
+    <string name="birth_weight_text_weight">身高体重</string>
+    <string name="birth_weight_text_year">年</string>
+    <string name="birth_weight_text_month">月</string>
+    <string name="birth_weight_text_day">日</string>
+    <string name="birth_weight_text_cm">厘米</string>
+    <string name="birth_weight_text_kg">公斤</string>
+    <string name="birth_weight_text_next">下一步</string>
+    <string name="birth_null_error">你丫什么时候生的！</string>
+    <string name="height_null_error">身高还没填呢！</string>
+    <string name="weight_null_error">体重呢？</string>
+    <string name="height_beyond_error">身高范围140-210厘米</string>
+    <string name="weight_beyond_error">体重范围40-150公斤</string>
+    <!-- 训练周期页 -->
+    <string name="duration_tip">练得越久，效果越好</string>
+    <string name="duration_text_duration">时间</string>
+    <string name="duration_text_7_days">1周</string>
+    <string name="duration_text_14_days">2周</string>
+    <string name="duration_text_21_days">3周</string>
+    <string name="duration_text_28_days">4周</string>
+    <string name="duration_tip2">冰冻三尺，非一日之寒。</string>
+    <string name="duration_text_weight">减脂目标</string>
+    <string name="duration_text_1_kg">1-2斤</string>
+    <string name="duration_text_2_kg">2-4斤</string>
+    <string name="duration_text_3_kg">4-6斤</string>
+    <string name="duration_text_4_kg">6-8斤</string>
+    <string name="duration_text_5_kg">10+斤</string>
+    <string name="duration_tip3">别闹</string>
+    <string name="duration_text_next">下一步</string>
+    <string name="duration_unselected_error">你还没选呢</string>
+
+    <!-- 选择部位页 -->
+    <string name="body_part_tip">哪些部位想多练?</string>
+    <string name="body_part_text_next">下一步</string>
+    <string name="body_part_part_1">胸</string>
+    <string name="body_part_part_2">背</string>
+    <string name="body_part_part_3">腹</string>
+    <string name="body_part_part_4">臂</string>
+    <string name="body_part_part_5">腿</string>
+    <string name="body_part_part_6">臀</string>
+
+    <!-- 注册页 -->
+    <string name="register_tip">我和你的距离只差这一步了</string>
+
+    <!-- 教练答疑 -->
+    <string name="message_list_title">教练答疑</string>
+    <string name="message_list_btn_ask_text">提问</string>
+    <string name="question_hint1">来问吧，等你很久了</string>
+    <string name="question_text_submit">提问</string>
+    <string name="question_tip">有什么问题</string>
+    <string name="load_more_complete">没有更多了</string>
+    <string name="new_message_notification_text">您有新消息</string>
+    <string name="qa_submit_success">已送达</string>
+    <string name="coach_offline_tip">我先睡了，起来再回复你：）</string>
+    <string name="message_from_myself">我</string>
+
+    <string name="fromCamera">从相机</string>
+    <string name="fromLib">从相册</string>
+    <string name="error_picture_library">相册打开异常</string>
+
+</resources>

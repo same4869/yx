@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.ml.yx.views.YouXinTitleBar
+        android:id="@+id/youxin_titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></com.ml.yx.views.YouXinTitleBar>
+
+    <TextView
+        android:id="@+id/stage_done_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/youxin_titlebar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp15v"
+        android:text="本阶段训练完成"
+        android:textColor="#EEFC1A"
+        android:textSize="@dimen/sp24" />
+
+    <com.ml.yx.views.ChartViews
+        android:id="@+id/user_stage_chart"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp200"
+        android:layout_below="@+id/stage_done_title"
+        android:layout_marginTop="@dimen/dp15v" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/user_stage_chart"
+        android:layout_marginLeft="@dimen/dp15"
+        android:layout_marginRight="@dimen/dp15"
+        android:layout_marginTop="@dimen/dp15v">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/totle_time_tip_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="训练总时长"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/sp14" />
+
+            <TextView
+                android:id="@+id/totle_time_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp5v"
+                android:text="12小时12分钟"
+                android:textColor="#FFEC1A"
+                android:textSize="@dimen/sp18" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/center_line"
+            android:layout_width="1px"
+            android:layout_height="@dimen/dp48v"
+            android:layout_centerHorizontal="true"
+            android:background="#403F39" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp15"
+            android:layout_toRightOf="@+id/center_line"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/target_weight_tip_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="目标体重"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/sp14" />
+
+            <TextView
+                android:id="@+id/target_weight_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp5v"
+                android:text="143斤"
+                android:textColor="#FFEC1A"
+                android:textSize="@dimen/sp18" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/level_stage_done_btn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp48"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dp15"
+        android:layout_marginLeft="@dimen/dp15"
+        android:layout_marginRight="@dimen/dp15"
+        android:background="@drawable/button_bg_selector"
+        android:text="开启新的训练" />
+
+    <TextView
+        android:id="@+id/dialog_head_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/youxin_titlebar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp10"
+        android:background="@drawable/chat_push"
+        android:gravity="center"
+        android:maxWidth="@dimen/dp260"
+        android:paddingLeft="@dimen/dp15"
+        android:paddingRight="@dimen/dp5"
+        android:text="效果满意吗？"
+        android:textColor="@color/text_color" />
+
+</RelativeLayout>

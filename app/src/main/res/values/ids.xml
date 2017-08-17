@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="pull_gridview" type="id" />
+    <item name="webview" type="id" />
+    <item name="scrollview" type="id" />
+    <item name="guide_item_icon" type="id" />
+    <item name="guide_item_text_layout" type="id" />
+    <item name="guide_middle" type="id" />
+    <item name="guide_login" type="id" />
+    <item name="guide_register" type="id" />
+    <item name="skin_wenba_titlebar" type="id" />
+
+</resources>

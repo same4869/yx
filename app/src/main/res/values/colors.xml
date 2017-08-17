@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#ffffff</color>
+    <color name="comm_bg">#1F1E1C</color>
+    <color name="font_title">#4c4c4c</color>
+    <color name="font_content">#999999</color>
+    <color name="font_content_cccccc">#cccccc</color>
+    <color name="font_login_forget">#99ddff</color>
+    <color name="font_333333">#333333</color>
+    <color name="app_grey_transparent">#80999999</color>
+    <color name="black_transluent">#bb000000</color>
+    <color name="common_bg_color">#212121</color>
+    <color name="square_bg_color">#333230</color>
+    <color name="transparent">#00000000</color>
+    <color name="red_point_color">#ff7733</color>
+
+    <color name="black">#000000</color>
+    <color name="edit_bg">#66655C</color>
+    <color name="yellow">#FFEC1A</color>
+    <color name="yellow2">#CC9629</color>
+    <color name="text_color">#66470A</color>
+    <color name="item_line">#403f39</color>
+    <color name="text_color_gray">#66655c</color>
+    <color name="black_bg">#323230</color>
+    <color name="white_60">#99ffffff</color>
+    <color name="black_60">#99000000</color>
+
+    <color name="title_bar_bg">#292925</color>
+
+    <drawable name="yellow">#FFEC1A</drawable>
+
+    <!-- 关卡 -->
+    <color name="level_unselect_item_bg">#807719</color>
+    <color name="level_unselect_item_text_color_1">#66470A</color>
+    <color name="level_unselect_item_text_color_2">#333230</color>
+    <color name="level_select_item_bg">#66655C</color>
+    <color name="level_select_item_text_color_1">#99948A</color>
+    <color name="level_select_item_text_color_2">#333230</color>
+    <color name="level_current_item_bg">#FFEC1A</color>
+    <color name="level_current_item_text_color_1">#CC9629</color>
+    <color name="level_current_item_text_color_2">#66470A</color>
+
+    <!-- 引导页 -->
+    <color name="guide_indicator_inactive_color">#7FFFFFFF</color>
+</resources>

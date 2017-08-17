@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:yx="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/dp15">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_above="@+id/user_start_btn"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/dp30"
+        android:paddingRight="@dimen/dp30">
+
+        <com.ml.yx.views.RoundAngleImageView
+            android:id="@+id/user_head_img"
+            android:layout_width="@dimen/dp80"
+            android:layout_height="@dimen/dp80"
+            yx:backgroudDrawable="@mipmap/yellow_blank"
+            yx:spaceSize="@dimen/dp2" />
+
+        <TextView
+            android:id="@+id/user_head_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp20"
+            android:background="@drawable/chat"
+            android:paddingBottom="@dimen/dp10"
+            android:paddingLeft="@dimen/dp10"
+            android:paddingRight="@dimen/dp10"
+            android:paddingTop="@dimen/dp13"
+            android:lineSpacingMultiplier="1.5"
+            android:textColor="@color/text_color" />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/user_start_btn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp48"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/button_bg_selector"
+        android:textColor="@color/text_color"
+        android:text="我准备好了" />
+
+
+</RelativeLayout>

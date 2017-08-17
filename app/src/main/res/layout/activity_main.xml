@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/test_huaxian"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="点我进入划线页" />
+
+    <Button
+        android:id="@+id/test_base"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="进入注册流程页面" />
+
+    <Button
+        android:id="@+id/test_weixin_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="尝试进行微信登陆" />
+
+    <Button
+        android:id="@+id/test_guide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="引导页" />
+
+    <Button
+        android:id="@+id/test_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="用户页面" />
+
+    <Button
+        android:id="@+id/test_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="登录页面" />
+
+
+</LinearLayout>
